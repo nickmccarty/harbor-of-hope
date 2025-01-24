@@ -115,6 +115,47 @@ section.mission p {
     font-size: 1.2rem;
 }
 
+section.privacy-notice {
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+}
+
+section.privacy-notice h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5F6163;
+}
+
+section.privacy-notice h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5F6163;
+}
+
+section.privacy-notice h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5F6163;
+}
+
+section.privacy-notice p {
+    font-size: 1.2rem;
+    color: #5F6163;
+    margin: 20px;
+}
+
+section.privacy-notice ol {
+    font-size: 1.2rem;
+    color: #5F6163;
+    margin: 20px;
+}
+
+section.privacy-notice ul {
+    font-size: 1.2rem;
+    color: #5F6163;
+    margin: 20px;
+}
+
 /* Footer styles */
 footer {
     background-color: #00344D;
@@ -164,5 +205,27 @@ footer a:hover {
 
     .nav-items li a {
         font-size: 1.2rem;
+    }
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.child {
+    width: 50%;
+}
+
+/* Media query for screen sizes smaller than 700px */
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .child {
+        width: 100%;
+        margin: 0;  /* Remove any margin */
+        padding: 0; /* Remove any padding */
     }
 }
