@@ -14,11 +14,13 @@ header {
     color: white;
 }
 
+/* Navigation bar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: relative;
 }
 
 nav .logo {
@@ -26,6 +28,7 @@ nav .logo {
     max-width: 100%;
 }
 
+/* Navigation menu items */
 .nav-items {
     display: flex;
     list-style: none;
@@ -45,6 +48,17 @@ nav .logo {
     color: #FFA500;
 }
 
+/* Hide menu toggle button by default */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero content */
 .hero-content {
     position: absolute;
     top: 50%;
@@ -84,93 +98,70 @@ nav .logo {
     color: white;
 }
 
-/* Mission section styles */
-.mission {
-    background-color: #024459;
+/* Section styles */
+section.mission {
     padding: 40px 20px;
     text-align: center;
-    margin: 0;
+    background-color: #004A6D;
 }
 
-.mission h2 {
-    margin: 0;
+section.mission h2 {
     font-size: 2rem;
-    color: #FFA500;
+    margin-bottom: 20px;
 }
 
-.mission p {
-    margin: 20px 0 0;
-    font-size: 1rem;
-    color: white;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
+section.mission p {
+    font-size: 1.2rem;
 }
 
 /* Footer styles */
 footer {
-    background-color: #002E44;
-    color: #C0C0C0;
-    padding: 20px 20px 40px;
+    background-color: #00344D;
+    padding: 20px;
     text-align: center;
-    margin: 0;
 }
 
-footer .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
-}
-
-footer .social-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-}
-
+footer .social-links,
 footer .links {
     margin: 10px 0;
 }
 
-footer .links a {
-    text-decoration: none;
+footer a {
     color: white;
+    text-decoration: none;
     margin: 0 10px;
 }
 
-footer p {
-    margin: 5px 0;
-}
-
-footer p a {
-    text-decoration: none;
+footer a:hover {
     color: #FFA500;
 }
 
-/* Responsive adjustments */
+/* Responsive menu for smaller screens */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
     .nav-items {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: rgba(0, 46, 68, 0.9);
+        padding: 20px;
+        border-radius: 8px;
     }
 
-    .menu-button {
-        display: block;
-        font-size: 1rem;
-        color: white;
-        background: none;
-        border: none;
-        font-weight: bold;
-        cursor: pointer;
+    .nav-items.active {
+        display: flex;
     }
 
-    .hero-content p {
-        font-size: 1.5rem;
+    .nav-items li {
+        margin-bottom: 10px;
     }
 
-    .button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+    .nav-items li a {
+        font-size: 1.2rem;
     }
 }
