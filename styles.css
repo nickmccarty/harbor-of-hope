@@ -229,3 +229,8 @@ footer a:hover {
         padding: 0; /* Remove any padding */
     }
 }
+
+a {
+    color: #FF663C;
+    text-decoration: none;
+}
