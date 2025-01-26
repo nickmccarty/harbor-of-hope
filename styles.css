@@ -234,3 +234,7 @@ body a {
     color: #FF663C;
     text-decoration: none;
 }
+
+hr {
+    margin: 40px;
+}
