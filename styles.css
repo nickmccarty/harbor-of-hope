@@ -283,3 +283,99 @@ hr {
 #attribution {
     color: #22999C;
 }
+
+#name {
+    color: rgb(37, 38, 39);
+}
+
+#role {
+    color: #5F6163;
+}
+
+.board-of-directors {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 20px; /* Reduce gap between columns */
+  }
+  
+.board-of-directors h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+.director {
+    display: flex;
+    flex-direction: column; /* Stack name and role vertically */
+    justify-content: center;
+    align-items: center;
+  }
+  
+.director .name, .director .role {
+    margin: 0;
+    padding: 0;
+  }
+
+.director .name {
+    font-weight: bold;
+}
+  
+.director .role {
+    font-weight: light; /* Optional: Highlight role */
+    text-transform: uppercase;
+    font-size: .8em;
+  }
+  
+/* Adjust columns for smaller screens */
+@media (max-width: 800px) {
+    .board-of-directors {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+  }
+  
+@media (max-width: 600px) {
+    .board-of-directors {
+      grid-template-columns: 1fr; /* 1 column */
+    }
+  }
+ 
+.executive-staff {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+    gap: 20px; /* Space between staff members */
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+.staff-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+.staff-member img {
+    width: 50%; /* Ensure image spans full width of the column */
+    height: 250px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    object-position: center; /* Center the image */
+    margin-bottom: 15px;
+  }
+  
+.staff-member .name, .staff-member .role {
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+.staff-member p {
+    margin: 10px 0;
+  }
+  
+/* Responsive Design */
+@media (max-width: 800px) {
+    .executive-staff {
+      grid-template-columns: 1fr; /* Switch to 1 column */
+    }
+  }
+  
