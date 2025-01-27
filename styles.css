@@ -343,7 +343,6 @@ hr {
 .executive-staff {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
-    gap: 20px; /* Space between staff members */
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -363,14 +362,20 @@ hr {
     margin-bottom: 15px;
   }
   
-.staff-member .name, .staff-member .role {
-    margin: 5px 0;
+.staff-member .name {
     font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+  
+.staff-member .role {
+    font-weight: light; /* Optional: Highlight role */
+    text-transform: uppercase;
+    font-size: .8em;
+    margin: 0;
+    padding: 0;
   }
   
-.staff-member p {
-    margin: 10px 0;
-  }
   
 /* Responsive Design */
 @media (max-width: 800px) {
