@@ -120,6 +120,12 @@ section.privacy-notice {
     background-color: #FFFFFF;
 }
 
+section.privacy-notice h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #5F6163;
+}
+
 section.privacy-notice h2 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -127,13 +133,13 @@ section.privacy-notice h2 {
 }
 
 section.privacy-notice h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
     color: #5F6163;
 }
 
 section.privacy-notice h4 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     color: #5F6163;
 }
