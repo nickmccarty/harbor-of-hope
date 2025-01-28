@@ -470,3 +470,12 @@ hr {
     }
   }
   
+#hero-image-trucks {
+    width: 100%;
+    height: 0;
+    padding-top: 33%;
+    background-image: url('./images/Truck-Photos-scaled.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
