@@ -67,6 +67,14 @@ nav .logo {
     position: relative; /* To position the dropdown relative to the nav item */
 }
 
+.close-svg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    fill: currentColor; /* For color control */
+}
+
 .dropdown-menu li {
     margin: 15px 0;
 }
