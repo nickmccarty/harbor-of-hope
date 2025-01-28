@@ -495,3 +495,66 @@ hr {
 #privacy-notice li {
     margin: 10px;
 }
+
+.menu {
+    display: flex;
+    gap: 10px; /* Spacing between items */
+  }
+
+.menu-item {
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #5F6163;
+  }
+
+.menu-item:hover {
+    background-color: #FFA500;
+  }
+
+#news-article {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 40px auto; /* Centers the div horizontally */
+    text-align: left; /* Ensures text stays aligned left */
+}
+
+#headline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns the text vertically */
+    margin-bottom: 10px; /* Adds space between the title and the category */
+  }
+
+#news-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: black;
+    line-height: 1.4;
+    margin: 0;
+    flex: 1; /* Ensures the title takes up remaining space */
+  }
+
+#read-more {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FF5722; /* Orange color */
+    margin: 0 0 0 15px; /* Adds spacing between the title and Read More */
+    white-space: nowrap; /* Prevents text wrapping */
+    cursor: pointer;
+  }
+
+#read-more:hover {
+    text-decoration: underline;
+  }
+
+#news-category {
+    font-size: 12px;
+    font-weight: bold;
+    color: #B0B0B0; /* Light gray */
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+  }
+
+  
