@@ -574,6 +574,22 @@ hr {
     display: inline-block;  /* Ensure it wraps its content */
 }
 
+#page-2:hover {
+    background-color: #FFA500;
+}
+
+#next-page:hover {
+    background-color: #FFA500;
+}
+
+#previous-page:hover {
+    background-color: #FFA500;
+}
+
+#landing-page:hover {
+    background-color: #FFA500;
+}
+
 /* .menu-item {
     padding: 5px 10px;
     cursor: pointer;
