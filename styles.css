@@ -557,4 +557,31 @@ hr {
     margin: 0 0 5px 0;
   }
 
+#pagination-controls {
+    display: flex;
+    gap: 5px; /* Spacing between items */
+    display: flex;                /* Use flexbox for layout */
+    justify-content: center;      /* Horizontally center the contents */
+    align-items: center;          /* Vertically align the contents */
+    margin: 0 auto;               /* Center the div within its parent container */
+    width: 100%;                  /* Full width for horizontal centering */
+    box-sizing: border-box;  
+  }
+
+#previous-page, #landing-page, #page-2, #next-page {
+    border: 2px solid #FFA500; /* Add a solid black border */
+    border-radius: 5px;     /* Optional: Rounded corners */
+    display: inline-block;  /* Ensure it wraps its content */
+}
+
+/* .menu-item {
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #5F6163;
+  }
+
+.menu-item:hover {
+    background-color: #FFA500;
+  } */
   
