@@ -428,11 +428,45 @@ hr {
     padding: 0;
   }
   
-  
 /* Responsive Design */
 @media (max-width: 800px) {
     .executive-staff {
       grid-template-columns: 1fr; /* Switch to 1 column */
+    }
+  }
+
+.donors {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 20px; /* Reduce gap between columns */
+  }
+  
+.donor {
+    display: flex;
+    flex-direction: column; /* Stack name and role vertically */
+    justify-content: left;
+    align-items: left;
+    margin-top: 15px;
+  }
+  
+.donor .name {
+    font-weight: light;
+    margin: 0;
+    padding: 0;
+}
+  
+/* Adjust columns for smaller screens */
+@media (max-width: 800px) {
+    .donors {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+  }
+  
+@media (max-width: 600px) {
+    .donors {
+      grid-template-columns: 1fr; /* 1 column */
     }
   }
   
