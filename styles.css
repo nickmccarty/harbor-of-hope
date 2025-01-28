@@ -49,6 +49,58 @@ nav .logo {
     color: #FFA500;
 }
 
+/* Dropdown menu styles */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position below the nav item */
+    left: 0;
+    display: none; /* Initially hidden */
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000; /* Ensure it appears above other elements */
+    list-style: none; /* Remove bullet points */
+}
+
+.nav-items li {
+    position: relative; /* To position the dropdown relative to the nav item */
+}
+
+.dropdown-menu li {
+    margin: 15px 0;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.dropdown-menu a:hover {
+    color: #FFA500; /* Highlight on hover */
+}
+
+/* Show the dropdown menu when the parent <li> is hovered */
+.nav-items li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Show dropdown menu when active */
+.dropdown-menu.active {
+    display: block;
+}
+
+/* Style the SVG to act as a button */
+.menu-svg {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-svg:hover {
+    transform: scale(1.2);
+}
+
 /* Hide menu toggle button by default */
 .menu-toggle {
     display: none;
